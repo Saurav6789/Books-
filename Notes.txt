@@ -1,0 +1,77 @@
+Comparison study of classification
+
+-if data is linearly separable , logistic regression and SVM do similar jobs.
+-if the data is non-linearly separable, then kernel SVM might do the job
+-if the data is dependant on the future or past events (for e.g text data , the next word is dependant on the last word). Also spam detection
+
+Naive Bayes Algorithms
+
+-uses the Bayes theorem
+-here we consider the situation of prior probability of event happening with the new information , we can compute which is called posterior probability.
+-example of "it will rain" depends on the day is cloudy or sunny.
+-data is transformed into contingency table trough which various probability is computed.
+-assumes indenpendence between independant variables.
+-disadvantage is features are hardly independant.
+
+Logistic Regression
+
+-in linear regression , the response random variable is follows a normal distribution while in logistic regression it follows bernoulli theorem
+-since it follows bernoulli theorem , the probability stands between 0 and 1
+-it ouputs a probability of a class given some inputs.
+-only used for binary response variables
+-In ML , binary model is trained K times and each contains the classes 1 and rest . While making predictions , we input through all these models (K in this case) and choose which occurs 
+maximum no of times
+
+
+K nearest neighbour 
+
+-confused over buying a car . Ask 10 neighbour example 
+-We need to decide on the value of K 
+-The nearest neighbour points are calculated based on the euclidean distance
+-We need to set the data every time after each prediction, that's why it's called lazy learning algorithm 
+-K is only parameter
+-most interpretable algo like decision tree
+-Whlole data is required for predictions (non-parametric algo)
+-linear and logistic comes under parametric algo
+
+
+Decision tree
+
+-most intuitive data because it makes prediction just the way how we human make predictions
+-decision trees work by asking some questions related to features of the data to segregate the data into a smaller and smaller part
+-decison tree segregate the data using maximization of entropy 
+-two imp questions 
+Which feature should be used to make split?
+Which value should the data be split on ?
+- impurity measure is used at each split to answer the above questions 
+-chances of overfitting , pruning is required in that case it means cut down the tree at some point of time.
+-solves both regression and classification 
+-decision tree will find the best subset of features for training, feature scaling is not required.
+-descion tree makes prediction by asking a bunch of questions until we are not sure which class a node belongs to. 
+
+
+
+Random Forests
+
+-collection of decision trees
+- can be used for regression and classification
+-called as ensemble learning method
+-outperforms the decision tree and tackles overfitting
+-feature scaling is not required 
+-less interpretable than decision trees but more powerful
+
+
+
+Support vector machines
+
+-used in digit recognition
+-algorithm which works by maximizing the so-called margin of the two classes.
+-used when data is less
+-strongly should be used in the non linear cases
+-used in image recognition tasks.
+
+
+
+
+
+	
