@@ -1,0 +1,38 @@
+# Specific files and directories to ignore
+
+# PDF book files
+*.pdf
+
+# Uploads directory
+uploads/
+
+# Images directory
+images/
+
+# Backup files
+*.bak
+
+# Text files
+*.txt
+
+# Spreadsheet files
+*.xlsx
+*.csv
+
+# Raw data directory
+data/
+
+# Processed data directory
+processed_data/
+
+# Configuration files
+*.config
+*.cfg
+
+# Environment files
+.env
+
+# Other general files and directories to ignore
+logs/
+temp/
+bin/
